@@ -118,11 +118,13 @@ local propertyTypeObject(properties, required) = {
   internal:: true,
 };
 
-local propertyTypeArray(items) = {
+local propertyTypeArray(items, count={ min: null, max: null }) = {
   type: 'array',
   items: {
     oneOf: items,
   },
+  minItems: if std.objectHas(count, 'min') then count.min,
+  maxItems: if std.objectHas(count, 'max') then count.max,
   internal:: true,
 };
 
