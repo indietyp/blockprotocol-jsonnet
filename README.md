@@ -51,7 +51,7 @@ like the id of the type it represents, e.g. property type `abbreviation` would b
 in `properties/abbreviation.jsonnet`. (_Note: technically the name can be anything, this just makes finding types
 easier_)
 
-In the following code snippets `org1` would be the name of you
+In the following code snippets `org1` would be the name you
 chose [in the previous section](#defining-the-library-entrypoint).
 
 ### Defining Entity Types
